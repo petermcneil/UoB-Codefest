@@ -7,7 +7,7 @@ import java.lang.reflect.Constructor;
  */
 public class Solutions implements Codefest {
     @Override
-    public int challenge1 (String s) {
+    public int challenge1(String s) {
         String[] c = s.split(" ");
         int total = 0;
         String operation = "+";
@@ -44,7 +44,7 @@ public class Solutions implements Codefest {
     }
 
     @Override
-    public int[] challenge2 (int[] array, int a) {
+    public int[] challenge2(int[] array, int a) {
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = i + 1; j < array.length; j++) {
                 int k = array[i] + array[j];
@@ -57,7 +57,7 @@ public class Solutions implements Codefest {
     }
 
     @Override
-    public int challenge3 (int[] array1, int[] array2) {
+    public int challenge3(int[] array1, int[] array2) {
         int t1 = find(array1);
         int t2 = find(array2);
 
@@ -67,7 +67,7 @@ public class Solutions implements Codefest {
 
     /// 103, 105
     /// 802
-    private int find (int[] array1) {
+    private int find(int[] array1) {
         int total = 0;
         for (int i = 0; i < array1.length; i++) {
             int temp = array1[i];
@@ -86,7 +86,7 @@ public class Solutions implements Codefest {
     }
 
     @Override
-    public <T> T challenge4 (Class<T> c, double a, double b) {
+    public <T> T challenge4(Class<T> c, double a, double b) {
         Constructor<?>[] con = c.getDeclaredConstructors();
 
         for (Constructor f : con) {
@@ -101,7 +101,7 @@ public class Solutions implements Codefest {
     }
 
     @Override
-    public int challenge5 (String s, int a) {
+    public int challenge5(String s, int a) {
         int i = s.indexOf("return");
         int j = s.indexOf(";");
 

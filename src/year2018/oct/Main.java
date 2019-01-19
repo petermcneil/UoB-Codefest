@@ -8,22 +8,22 @@ import static java.util.Arrays.asList;
 public class Main {
 
     private static final Codefest c = new Solutions();
-    private static int count = 1;
     private static final String[] challengeNames = {
-        "Casper",
-        "Jason Voorhees",
-        "Dracula",
-        "Jigsaw",
-        "Alien",
-        "It",
-        "Leatherface",
-        "Michael Myers",
-        "Freddy Krueger",
-        "Frankenstein's monster"
+            "Casper",
+            "Jason Voorhees",
+            "Dracula",
+            "Jigsaw",
+            "Alien",
+            "It",
+            "Leatherface",
+            "Michael Myers",
+            "Freddy Krueger",
+            "Frankenstein's monster"
     };
+    private static int count = 1;
 
     public static void main(String[] args) {
-        Runnable[] challenges = new Runnable[] {
+        Runnable[] challenges = new Runnable[]{
                 Main::challenge1,
                 Main::challenge2,
                 Main::challenge3,

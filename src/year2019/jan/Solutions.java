@@ -8,8 +8,8 @@ import java.util.Map;
  */
 public class Solutions implements Codefest {
     @Override
-    public int challenge1 (String s) {
-        final Map<String, Integer> numerals = new HashMap() {{
+    public int challenge1(String s) {
+        final Map<String, Integer> numerals = new HashMap<String, Integer>() {{
             put("M", 1000);
             put("I", 1);
             put("X", 10);
@@ -39,7 +39,7 @@ public class Solutions implements Codefest {
     }
 
     @Override
-    public boolean challenge2 (String a, String b) {
+    public boolean challenge2(String a, String b) {
         final Map<Character, Integer> aMap = generateMap(a);
         final Map<Character, Integer> bMap = generateMap(b);
 
@@ -47,7 +47,7 @@ public class Solutions implements Codefest {
         return aMap.equals(bMap);
     }
 
-    private Map<Character, Integer> generateMap (String a) {
+    private Map<Character, Integer> generateMap(String a) {
         a = a.toLowerCase();
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < a.length(); i++) {
@@ -64,12 +64,12 @@ public class Solutions implements Codefest {
     }
 
     @Override
-    public int challenge3 (int a, int b) {
+    public int challenge3(int a, int b) {
         return (int) Math.pow(a, b);
     }
 
     @Override
-    public int challenge4 (int a) {
+    public int challenge4(int a) {
         boolean negative = false;
         final String aString = Integer.toString(a)
                 .replace("-", "");
@@ -95,15 +95,15 @@ public class Solutions implements Codefest {
     }
 
     @Override
-    public String challenge5 (String s) {
+    public String challenge5(String s) {
         s = s.toLowerCase();
 
         StringBuilder fin = new StringBuilder();
         for (int i = 0; i < s.length(); i = i + 2) {
-            int first = s.charAt(i) - 96;
-            int second = s.charAt(i + 1) - 96;
+            int first = s.charAt(i);
+            int second = s.charAt(i + 1);
 
-            char c = (char) (first + second + 96);
+            char c = (char) ((first + second) - 96);
 
             fin.append(c);
         }

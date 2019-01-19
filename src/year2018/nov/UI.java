@@ -8,9 +8,9 @@ import javafx.scene.text.Font;
  */
 class UI {
 
-    private GraphicsContext g;
     private final int width;
     private final int height;
+    private GraphicsContext g;
 
     UI(GraphicsContext g) {
         this.g = g;

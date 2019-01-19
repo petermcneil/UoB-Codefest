@@ -13,7 +13,7 @@ public class Main {
     private static int count = 1;
 
     public static void main(String[] args) {
-        Runnable[] challenges = new Runnable[] {
+        Runnable[] challenges = new Runnable[]{
                 Main::challenge1,
                 Main::challenge2,
                 Main::challenge3,
@@ -40,11 +40,11 @@ public class Main {
     private static void challenge2() {
         int[] input1 = {10, 20, 30, 40};
 
-        test(Arrays.equals(new int[] {0, 2}, c.challenge2(input1, 40)));
+        test(Arrays.equals(new int[]{0, 2}, c.challenge2(input1, 40)));
 
         int[] input2 = {10, 30, 50, 80};
 
-        test(Arrays.equals(new int[] {1, 3}, c.challenge2(input2, 110)));
+        test(Arrays.equals(new int[]{1, 3}, c.challenge2(input2, 110)));
     }
 
     private static void challenge3() {

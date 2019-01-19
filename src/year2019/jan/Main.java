@@ -1,7 +1,5 @@
 package year2019.jan;
 
-import java.util.Arrays;
-
 /**
  * For Year 3 (Level 6).
  *
@@ -13,7 +11,7 @@ public class Main {
     private static int count = 1;
 
     public static void main(String[] args) {
-        Runnable[] challenges = new Runnable[] {
+        Runnable[] challenges = new Runnable[]{
                 Main::challenge1,
                 Main::challenge2,
                 Main::challenge3,

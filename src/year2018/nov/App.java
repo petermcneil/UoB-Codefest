@@ -27,6 +27,10 @@ public class App extends Application {
     private double t = 0;
     private int index = 0;
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     private Parent createContent() {
         addMockData();
 
@@ -99,9 +103,5 @@ public class App extends Application {
     public void start(Stage stage) throws Exception {
         stage.setScene(new Scene(createContent()));
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }

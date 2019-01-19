@@ -5,46 +5,24 @@ package year2018.nov;
  */
 public final class WeatherData {
 
-    public enum WeatherStatus {
-        SUNNY, RAIN, CLOUDY
-    }
-
-    public enum WindDirection {
-        SOUTH, EAST, WEST, NORTH
-    }
-
-    public enum PollutionLevel {
-        LOW, MEDIUM, HIGH
-    }
-
     private String cityName;
     private String countryName;
     private String weatherStationName;
-
     // Celsius
     private double temperature;
-
     // m/s
     private double windSpeed;
-
     private WindDirection windDirection;
-
     // [0-100] %
     private double humidity;
-
     // [0-100] %
     private double chanceOfRain;
-
     private WeatherStatus status;
-
     // kPa
     private double atmosphericPressure;
-
     private PollutionLevel pollutionLevel;
-
     // [0-23]
     private int hours;
-
     // [0-59]
     private int minutes;
 
@@ -126,5 +104,17 @@ public final class WeatherData {
 
     public int getMinutes() {
         return minutes;
+    }
+
+    public enum WeatherStatus {
+        SUNNY, RAIN, CLOUDY
+    }
+
+    public enum WindDirection {
+        SOUTH, EAST, WEST, NORTH
+    }
+
+    public enum PollutionLevel {
+        LOW, MEDIUM, HIGH
     }
 }
