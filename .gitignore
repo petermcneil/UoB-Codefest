@@ -25,3 +25,5 @@ target/
 # logs #
 *.log
 logs/
+
+build/
